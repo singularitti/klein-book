@@ -1,0 +1,43 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%
+% 请用XeTeX引擎编译, 编译之前请确保安装相应字体!
+% 原文中出现的"", 全部使用English quotes(unicode), 如果看到?*?说明
+% 原来是"*"没有替换过来. 如果需要其他格式的引号请自行替换
+% 原文中矩阵内的元素以","分隔, 这里以空格代替
+% 行内的分式一般采用\dfrac命令, 如果需要改成\frac, 请自行替换
+% 由于手稿不清楚, 可能会发生把$\xi$堪称$\zeta$, 把$\alpha$堪称2(或反过来), 
+% 把$\cup$看成U, 把$\vartheta$看成$\nu$的情况, 请见谅
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\documentclass[10pt,a4paper,leqno]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{unicode-math} % 配合 \setmathfont 命令
+
+\setmainfont{LinLibertine_R.otf} % 使用 Linux Libertine 字体作为默认 text 字体
+\setmathfont{STIXMath-Regular.otf} % 使用 STIXMath 字体作为公式字体
+
+\newcommand{\ii}{\ensuremath{\mathrm{i}}} % 虚数单位
+\newcommand{\abs}[1]{\left|#1\right|} % 绝对值
+\makeatletter
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@} % roman number
+\makeatother
+
+\begin{document}
+\tableofcontents
+\include{./sec1} % 引入 sec1.tex
+\include{./sec2}
+\include{./sec3}
+\include{./sec4}
+\include{./sec5}
+\include{./sec6}
+\include{./sec7}
+\include{./sec8}
+\include{./sec9}
+\include{./sec10}
+\include{./sec11}
+\include{./sec12}
+\include{./sec13}
+\end{document}
